@@ -13,12 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = mysqli_real_escape_string($conn, $_POST['email']);
      // Convert date format from DD-MM-YYYY HH:MM to YYYY-MM-DD HH:MM:SS for MySQL
      $booking_date = $_POST['datetime'];
-     $date_obj = DateTime::createFromFormat('d-m-Y H:i', $booking_date);
-     if ($date_obj) {
-         $booking_date = $date_obj->format('Y-m-d H:i:s');
-     } else {
-         $error_message = "Invalid date format. Please use DD-MM-YYYY HH:MM format.";
-     }
+    
     $people = intval($_POST['people']);
     $special_request = mysqli_real_escape_string($conn, $_POST['message']);
     
@@ -233,8 +228,8 @@ $conn->close();
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="form-floating date" id="date3" data-target-input="nearest">
-                                    <input type="text" class="form-control" id="datetime" name="datetime" placeholder="DD-MM-YYYY HH:MM" value="<?php echo htmlspecialchars($booking_date); ?>" required pattern="\d{2}-\d{2}-\d{4} \d{2}:\d{2}" title="Please enter date in DD-MM-YYYY HH:MM format">
+                                <div class="form-floating date" id="date3" data-target-input="nearest">    
+                               <input type="datetime-local"  class="form-control" id="datetime" name="datetime" placeholder="DD-MM-YYYY HH:MM" value="<?php echo htmlspecialchars($booking_date); ?>">
                                     <label for="datetime">Date & Time </label>
                                 </div>
                             </div>
