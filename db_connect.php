@@ -2,7 +2,7 @@
 // Database configuration
 $host = 'localhost';
 $user = 'root';      // Change to your username
-$pass = '';          // Change to your password
+$pass = 'Tejinder';          // Change to your password
 $db   = 'tastybites';
 
 // Create connection and select database
