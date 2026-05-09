@@ -9,7 +9,7 @@
                 Rights Reserved.
                 <div class="mt-2">
                   Designed By
-                  <span class="copyright-owner">Tejinder & Jasmine & Dharampal</span>
+                  <span class="copyright-owner">Tejinder</span>
                 </div>
               </div>
             </div>
