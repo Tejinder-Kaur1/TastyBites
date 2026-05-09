@@ -218,6 +218,6 @@
       document.getElementById("current-year").textContent =
         new Date().getFullYear();
     </script>
-    <b> <center>Made with 	&#10084;&#65039; by us.</center></b> 
+    <b> <center>Made with 	&#10084;&#65039; by Me.</center></b> 
   </body>
 </html>
