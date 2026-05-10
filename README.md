@@ -45,19 +45,7 @@ CREATE TABLE bookings (
 
 ## Run Project
 
-1. Move project folder to:
-
-```txt
-C:\wamp64\www\
-```
-
-2. Start WAMP Server
-
-3. Open browser:
-
-```txt
-http://localhost/Tejinder/
-```
+https://tastybites04.infinityfreeapp.com/
 
 ## Author
 
